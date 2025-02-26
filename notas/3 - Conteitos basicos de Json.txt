@@ -1,0 +1,7 @@
+A estrutura do json é parcido com a array de javascript
+{
+    "item1" : "valor ",
+    "array" :{
+        "valor 1", "valor 2"
+    }
+}

@@ -1,0 +1,43 @@
+O que nodeJs?
+
+Sites e aplicativos ----requisição----> Servidor
+(frontend)                              (Backend -> Regras de negocio, db...)
+
+Você pode roda Js no frontend (browser) e no backend (Node.js)
+
+Node.js <- Ambiente de execução
+- Execução no servidor
+- Utilizar Js
+- Utiliza o mesmo sistea do Google Chrome (V8)
+
+Npm <- gerenciado de pacotes
+- Gerencia bibliotecas de terceiro
+
+Yarn <- gerenciado de pacotes
+- Vantagem: Velocidade de execução e desenvolvimento
+
+Como funcionar Node.js
+Todos os processamentos ficamm empilhados na CALL STACK <- Pilha de execução
+Call Stack
+- Processo 1
+- Processo 2
+- Processo 3
+
+Event loop -> loop que "procura" processos na call-stack, de rotas...
+-> Last in, first out
+-> Single Thread
+-> I/O não bloquante
+
+Framework web 
+- Express (flexivel e sem estrutura)
+- NestJs e AdonisJs (com estrutura)
+
+-------------------------------
+Call Stack
+- Processo 1
+- Processo 2
+- Processo 3
+
+Eventloop procura por requisições
+Eventloop processa processo 3
+Eventloop procura por requisições

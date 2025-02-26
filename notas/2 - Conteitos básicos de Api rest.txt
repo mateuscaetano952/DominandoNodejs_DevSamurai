@@ -1,0 +1,34 @@
+Usuario ---> Requisição ------> Servidor
+Usuario <---- Html <-------Servidor (node.js + views)
+
+*Problema: Não se pode utilizar o processamento para multiplas plataformas.
+site   ---> Requisição ------> Servidor  OK
+Usuario <---- Html <-------Servidor (node.js + views)
+
+App mobile ---> Requisição ------> Servidor NOT OK
+App mobile X <---- Html <-------Servidor (node.js + views)
+
+Solução: Estrutura a informação de forma diferente Json
+App mobile ---> Requisição ------> Servidor 
+App mobile <---- Json <-------Servidor (node.js + views)
+Site ---> Requisição ------> Servidor 
+Site <---- Json <-------Servidor (node.js + views)
+
+O servidor se torna responsavel apenas por retorna a informação estrutura.
+A responsabilidade de estrutura visualmente a informação fica a cargo do front-end
+
+Como funcionar
+Site
+Apps  -------> Rota -----------------------------> Node.js
+Serviços  (Caminho espeficio da processmento)
+
+Metodos http
+Get -> Requisita algo do servidor
+Post -> Ele inserir algo no servidor
+Put -> Editar algo no servidor
+Delete -> Deleta algo no servidor
+
+Estrutura de uma requisição
+Metodo Http / Rota /parametro
+
+
