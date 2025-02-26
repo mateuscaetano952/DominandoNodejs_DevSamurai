@@ -1,0 +1,24 @@
+Rest é um conjunto de principios
+
+Tudo aquilo que uma aplicação gerencia no modelo rest são seus recursos
+- exemplo as rotas.
+
+Um recurso é um dominio da informação que ele geremcia
+
+Url amigaveis -> apresentação do recurso na propria Url
+
+Ações -> Intenções de realizar alguma coisa exemplo (lista, inclui)
+
+Toda requisição retonar uma código http
+
+2xx <- A requisição foi bem sucedida
+3xx <- Indica ao cliente uma ação a ser domana 
+4xx <- Erro na requisição causado pelo cliente
+5xx <- Eror ocoriddo no servidor
+
+Rest é um padrão não um framework -> pode se atapda a sua necessidade
+
+
+
+
+

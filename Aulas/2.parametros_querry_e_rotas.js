@@ -17,7 +17,7 @@ server.get("/", (req, res) => {
 
 //Parametros de rota
 // http://localhost:3000/Hello/Felipe
-// Route params = /:nome
+// Route params = /Hello/:nome
 
 server.get("/Hello/:nome", (req, res) => {
     const nome = req.params.nome;
