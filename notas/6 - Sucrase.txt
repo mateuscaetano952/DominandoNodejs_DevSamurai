@@ -1,0 +1,17 @@
+O sucrase permiti que o node entenda sinxate "Mais nova"
+
+Bastar adicionar
+
+nodemon.json
+{
+    "execMap": {
+        "js": "sucrase-node"
+    }
+}
+
+Exemplo
+Sintaxe antiga (suportada pelo node) -> const x = require(caminho)
+Nova sintaxe(Não suportada pelo node) -> import x from 'caminho'
+
+Sintaxe antiga (suportada pelo node) -> exports.default = x
+Nova sintaxe(Não suportada pelo node) -> export default x;
