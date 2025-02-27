@@ -1,0 +1,11 @@
+#dica utilize contexto antes da variavel
+exemplo:
+console.log("GET :: /customers", variavel);
+Caso o node não consiga mostra a mensagem de forma correta
+console.log("GET :: /customers", JSON.stringify(variavel));
+
+Tipos de logs
+console.log() <- mensagem informativa
+console.debug() <- teste visual apra o programador
+console.warn() <- Presta atenção
+console.erro() <- Error
