@@ -1,0 +1,22 @@
+Orm
+Integra api com banco de dados
+
+Orm (Object relational map)
+
+Abstração do banco dados e tabelcas tornam-se classes.
+
+Sequelize 
+
+Tabela usuario -> classe users
+
+Em vez de utiliza sql se manipula o banco de dados por funções de classe.
+
+Migrations
+- Controla as versões das tabelas/banco de dados
+- Cada migration contem as intruções 
+- Processo up -> roda
+- Processo down -> Rollback
+- Cada migração deve manipular 1 tabela
+
+
+

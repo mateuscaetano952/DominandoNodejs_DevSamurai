@@ -1,0 +1,15 @@
+const { resolve } = require("path")
+
+module.exports = {
+    "config": resolver(__dirname, "src", "config", "databa.js"),
+    "models-path": resolve(__dirname, "src", "app", "models"),
+    "migrations-path": resolve(__dirname, "src", "database",  "migrations"),
+    "seeders-path": resolve(__dirname, "src", "database",  "seeds"),
+}
+
+
+
+
+
+
+
