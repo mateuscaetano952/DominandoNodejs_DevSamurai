@@ -1,14 +1,17 @@
-const { underscoredIf } = require("sequelize/lib/utils");
+require('dotenv').config();
 
 module.exports = {
-    dialect: "postgres",
-    host: "localhost",
-    username: "postgres",
-    password: "secret",
-    database: "teste-dominando-nodejs",
-    define:{
-        timestamp: true, // Cria duas coluna update_at e created_at
-        underscored: true, //troca a nomeclatura =>  nomeTeste1 => nome_teste_1 =
-        underscoredAll: true
-    }
-}
+  dialect: 'postgres',
+  host: process.env.DATABASE_HOST,
+  port: process.env.DATABASE_PORT,
+  username: process.env.DATABASE_USERNAME,
+  password: process.env.DATABASE_PASSWORD,
+  database: process.env.DATABASE,
+  define: {
+    timestamps: true,
+    underscored: true,
+    createAt: 'created_at',
+    updateAt: 'updated_at',
+  },
+
+};

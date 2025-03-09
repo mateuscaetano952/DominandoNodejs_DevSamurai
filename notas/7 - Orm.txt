@@ -18,5 +18,11 @@ Migrations
 - Processo down -> Rollback
 - Cada migração deve manipular 1 tabela
 
+ yarn sequelize migration:create --name=create-customers -> Criar migração
+ * Migraçãos em deve contar a ação da propria "create"
+ * Cada migração deve manipular apenas um elemento
+
+
+yarn sequelize db:migrate -> Transferir a migração para base de dados.
 
 
